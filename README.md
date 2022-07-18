@@ -29,8 +29,8 @@ docker pull huangwenjingcs/ubuntu18-conda-cuda11-pytorch1.7
 
 ---
 
-1. To obtain the CelebA-HQ dataset, please refer to the [Progressive GAN repository](https://github.com/tkarras/progressive_growing_of_gans). The official way of generating CelebA-HQ can be challenging. You can get the pre-generated dataset from [CelebA-HQ-dataset](https://drive.google.com/file/d/19sO0xF4gr8cllW2uzOONgLvciB39Mx3H/view?usp=sharing). Unzip the file and put the images them to "data/CelebA-HQ-img/".
-2. To obtain the  Visual Genome Animals dataset, please refer to [VGA](https://drive.google.com/file/d/19sO0xF4gr8cllW2uzOONgLvciB39Mx3H/view?usp=sharing). Download the images and put them to "data/VGA-img/".  To obtain the full Visual Genome dataset, please refer to [VisualGenome](https://visualgenome.org/).
+1. To obtain the CelebA-HQ dataset, please refer to the [Progressive GAN repository](https://github.com/tkarras/progressive_growing_of_gans). The official way of generating CelebA-HQ can be challenging. You can get the pre-generated dataset from [CelebA-HQ-dataset](https://drive.google.com/file/d/17wOT2Du1oKMU8DtRWupR_m1mgWvnGl1I/view?usp=sharing). Unzip the file and put the images them to "data/CelebA-HQ-img/".
+2. To obtain the  Visual Genome Animals dataset, please refer to [VGA](https://drive.google.com/file/d/1WYBmk2pSBDtJcx-MFjJzwaX7FiDRL4sa/view?usp=sharing). Download the images and put them to "data/VGA-img/".  To obtain the full Visual Genome dataset, please refer to [VisualGenome](https://visualgenome.org/).
 ## Training networks
 
 ---
