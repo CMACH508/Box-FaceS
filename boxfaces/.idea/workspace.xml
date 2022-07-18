@@ -2,82 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f499450-8db8-49fd-bf91-96e20e02a281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../vga/data/bbox.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/data/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/data/vga_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/batchnorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/batchnorm_reimpl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/comm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/replicate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/tests/test_numeric_batchnorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/tests/test_numeric_batchnorm_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/Synchronized-BatchNorm-PyTorch/tests/test_sync_batchnorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/layer_builders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/nets_builders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/fused_act.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/fused_bias_act.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/fused_bias_act_kernel.cu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/upfirdn2d.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/upfirdn2d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/op/upfirdn2d_kernel.cu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/batchnorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/batchnorm_reimpl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/comm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/replicate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/sync_batchnorm/unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/vga/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/vga/layer_builders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/modules/vga/nets_builders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/move.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/prepare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/reconstruction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vga/utils/eval_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkpoints/celebahq/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comtrsf.py" beforeDir="false" afterPath="$PROJECT_DIR$/comtrsf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/celebahq.json" beforeDir="false" afterPath="$PROJECT_DIR$/configs/celebahq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_loader/celebahq.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_loader/celebahq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/networks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/move.py" beforeDir="false" afterPath="$PROJECT_DIR$/move.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/14124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/2569.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/4027.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/5256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/5914.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/6786.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/6898.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/move/eyes_up/9057.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/14124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/2569.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/4027.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/5256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/5914.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/6786.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/6898.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/recon/9057.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parse_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/reconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/replace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/eval_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/eval_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/evaluation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/model_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vga/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,39 +18,15 @@
     <SUITE FILE_PATH="coverage/boxfaces$replace.coverage" NAME="replace Coverage Results" MODIFIED="1658045321655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/boxfaces$component_transfer.coverage" NAME="comtrsf Coverage Results" MODIFIED="1658047260663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/boxfaces$reconstruction.coverage" NAME="reconstruction Coverage Results" MODIFIED="1658155239010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/boxfaces$train.coverage" NAME="train Coverage Results" MODIFIED="1658155887371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/boxfaces$train.coverage" NAME="train Coverage Results" MODIFIED="1658156962832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_loader/celebahq.py">
+        <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="52" column="11" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="52" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/networks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2880">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5622">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="1005">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -132,10 +35,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configs/celebahq.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_loader/celebahq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="131" column="58" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comtrsf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="248">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
               </folding>
@@ -144,55 +92,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/eval_utils.py">
+        <entry file="file://$PROJECT_DIR$/prepare.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/model_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2537">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/move_parameters.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/task.py">
+        <entry file="file://$PROJECT_DIR$/reconstruction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2753">
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/trainer_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="249">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/replace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parse_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,6 +158,7 @@
       <find>collections</find>
       <find>config['dataset]</find>
       <find>huangwenjing</find>
+      <find>home</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -257,14 +199,14 @@
         <option value="$PROJECT_DIR$/parse_config.py" />
         <option value="$PROJECT_DIR$/move.py" />
         <option value="$PROJECT_DIR$/data_loader/celebahq_wo_cls.py" />
-        <option value="$PROJECT_DIR$/comtrsf.py" />
         <option value="$PROJECT_DIR$/utils/eval_utils.py" />
         <option value="$PROJECT_DIR$/utils/task.py" />
         <option value="$PROJECT_DIR$/prepare.py" />
         <option value="$PROJECT_DIR$/reconstruction.py" />
-        <option value="$PROJECT_DIR$/configs/celebahq.json" />
         <option value="$PROJECT_DIR$/utils/model_utils.py" />
         <option value="$PROJECT_DIR$/utils/data_utils.py" />
+        <option value="$PROJECT_DIR$/comtrsf.py" />
+        <option value="$PROJECT_DIR$/configs/celebahq.json" />
       </list>
     </option>
   </component>
@@ -298,7 +240,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../evaluation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vga" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -331,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.comtrsf">
+  <component name="RunManager" selected="Python.train">
     <configuration name="comtrsf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="boxfaces" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -451,8 +393,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.comtrsf" />
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.comtrsf" />
         <item itemvalue="Python.reconstruction" />
         <item itemvalue="Python.move" />
         <item itemvalue="Python.replace" />
@@ -471,23 +413,22 @@
       <updated>1658024312654</updated>
       <workItem from="1658024313882" duration="18433000" />
       <workItem from="1658063639542" duration="816000" />
-      <workItem from="1658065062060" duration="13605000" />
+      <workItem from="1658065062060" duration="14650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32854000" />
+    <option name="totallyTimeSpent" value="33899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="32" width="2493" height="1408" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14190595" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14190595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5029536" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04472574" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5029536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,7 +437,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28368202" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4185654" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -608,16 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/networks_wo_bam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
@@ -661,66 +592,6 @@
     <entry file="file://$PROJECT_DIR$/output/reals/5256.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/comtrsf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/move.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prepare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2291">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reconstruction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/replace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/base_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-491">
@@ -740,39 +611,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/celebahq.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_loader/celebahq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="52" column="11" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="52" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/networks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2880">
           <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5622">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,13 +664,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reconstruction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="248">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comtrsf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="131" column="58" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_loader/celebahq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/celebahq.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>

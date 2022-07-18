@@ -5,3 +5,5 @@ tqdm
 opencv-python
 albumentations
 pytorch_fid
+tensorboardX
+tensorboard
