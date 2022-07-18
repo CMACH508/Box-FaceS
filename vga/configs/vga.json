@@ -1,0 +1,86 @@
+{
+  "seed": 123,
+  "dataset": "vga",
+  "model_arch": "networks",
+  "encoder": {
+    "type": "Encoder",
+    "args": {
+      "channel": 32
+    }
+  },
+  "generator": {
+    "type": "Generator",
+    "args": {
+      "img_size": 256
+    }
+  },
+  "discriminator": {
+    "type": "Discriminator",
+    "args": {
+      "size": 256
+    }
+  },
+  "data_set": {
+    "type": "VisualGenome",
+    "args": {
+      "data_path": "data/train.txt",
+      "bbox_path": "data/bbox.pkl",
+      "image_dir": "data/VGA-img",
+      "resolution": 256,
+      "num_samples": -1
+    }
+  },
+
+    "val_data_set": {
+    "type": "VisualGenome",
+    "args": {
+      "data_path": "data/val.txt",
+      "bbox_path": "data/bbox.pkl",
+      "image_dir": "data/VGA-img",
+      "resolution": 256,
+      "num_samples": -1
+    }
+  },
+  "data_loader": {
+    "batch_size": 4,
+    "shuffle": true,
+    "num_workers": 4
+  },
+  "loss": {
+    "g_loss_weight": 1,
+    "d_loss_weight": 1,
+    "p_loss_weight": 1,
+    "l1_loss_weight": 1,
+    "d_reg_every": 16,
+    "r1": 10
+  },
+  "optimizer_G": {
+    "lr": 0.002
+  },
+  "optimizer_D": {
+    "lr": 0.002
+  },
+  "lr_scheduler_D": {
+    "type": "ExponentialLR",
+    "args": {
+      "gamma": 0.99
+    }
+  },
+  "lr_scheduler_G": {
+    "type": "ExponentialLR",
+    "args": {
+      "gamma": 0.99
+    }
+  },
+  "trainer": {
+    "epochs": 400,
+    "update_ckpt": 1000,
+    "save_dir": "saved",
+    "save_period": 20,
+    "val_period": 1,
+    "log_period": 100,
+    "vis_img_num": 8,
+    "verbosity": 2,
+    "tensorboard": true
+  }
+}

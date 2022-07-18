@@ -31,9 +31,6 @@ class CelebAHQDataset(Dataset):
 
         self.image_dir = image_dir
 
-        # define common transform
-        # self.flip = A.HorizontalFlip()  # bbox (x_min, y_min, x_max, y_max)
-
         # define image transform
         transform = list()
         transform.append(A.Resize(height=resolution, width=resolution))
@@ -49,9 +46,10 @@ class CelebAHQDataset(Dataset):
         """
         Returns a tuple of:
         - image: FloatTensor of shape (C, H, W)
-        - mask: LongTensor of shape (num_objs,)
-        - boxes: FloatTensor of shape (num_objs, 4) giving boxes for objects in
-          (x0, y0, x1, y1) format, in a [0, 1] coordinate system.
+        - mask1: FloatTensor of shape (C, H, W)
+        - mask2: FloatTensor of shape (C, H, W)
+        - boxes: Int32Tensor of shape (num_components, 4) giving boxes for components in
+          (x0, y0, x1, y1) format, in a [0, H] coordinate system.
         """
 
         img_path = os.path.join(self.image_dir, self.image_ids[index])
@@ -63,11 +61,6 @@ class CelebAHQDataset(Dataset):
         if self.split == 'train' and random.random() > 0.5:
             image = cv2.flip(image, 1)
             boxes[:, 1], boxes[:, 3] = 512 - bboxes[:, 3], 512 - bboxes[:, 1]
-
-        # mask = np.zeros_like(image)
-        # for box in boxes[1:2]:
-        #     mask[box[0]:box[2], box[1]:box[3]] = 1
-        # cv2.imwrite('%s' % self.image_ids[index], (mask * image))
 
         image = self.transform(image=image)['image']
         boxes = torch.from_numpy(np.array(bboxes))
@@ -83,5 +76,4 @@ class CelebAHQDataset(Dataset):
                     mask2[:, box_256[node, 0]:box_256[node, 2], box_256[node, 1]:box_256[node, 3]] = 0
         else:
             mask1, mask2 = torch.ones_like(image), torch.ones_like(image)
-
         return image, mask1, mask2, boxes

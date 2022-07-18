@@ -7,9 +7,6 @@ from utils.model_utils import get_node_feats, get_node_box
 import numpy as np
 
 
-##########################################################
-# face icon=8*8*512, component embedding=6*256
-##########################################################
 class Encoder(nn.Module):
     def __init__(
             self,
@@ -25,7 +22,7 @@ class Encoder(nn.Module):
 
         num_block = int(math.log(img_size // self.fs, 2))
         in_channel = channel
-        for i in range(1, num_block+1):
+        for i in range(1, num_block + 1):
             ch = channel * (2 ** i)
             stem.append(ResBlock(in_channel, ch, downsample=True, padding="reflect"))
             in_channel = ch

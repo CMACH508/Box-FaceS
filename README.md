@@ -29,8 +29,8 @@ docker pull huangwenjingcs/ubuntu18-conda-cuda11-pytorch1.7
 
 ---
 
-1. To obtain the CelebA-HQ dataset, please refer to the [Progressive GAN repository](https://github.com/tkarras/progressive_growing_of_gans). The official way of generating CelebA-HQ can be challenging. You can get the pre-generated dataset from [CelebA-HQ-dataset](https://drive.google.com/drive/folders/11Vz0fqHS2rXDb5pprgTjpD7S2BAJhi1P) and download [data1024$\times$1024.zip](https://drive.google.com/file/d/1-LFFkFKNuyBO1sjkM4t_AArIXr3JAOyl/view?usp=sharing).  Unzip the zipfile and put the images them to "data/CelebA-HQ-img/".
-2. To obtain the  Visual Genome Animals dataset, please refer to [VGA](https://visualgenome.org/). Download the images and put them to "data/VGA-img/". Download the bounding box annotations and put it to "data/vga-bbox.pkl".  To obtain the full Visual Genome dataset, please refer to [VisualGenome](https://visualgenome.org/).
+1. To obtain the CelebA-HQ dataset, please refer to the [Progressive GAN repository](https://github.com/tkarras/progressive_growing_of_gans). The official way of generating CelebA-HQ can be challenging. You can get the pre-generated dataset from [CelebA-HQ-dataset](https://drive.google.com/file/d/19sO0xF4gr8cllW2uzOONgLvciB39Mx3H/view?usp=sharing). Unzip the file and put the images them to "data/CelebA-HQ-img/".
+2. To obtain the  Visual Genome Animals dataset, please refer to [VGA](https://drive.google.com/file/d/19sO0xF4gr8cllW2uzOONgLvciB39Mx3H/view?usp=sharing). Download the images and put them to "data/VGA-img/".  To obtain the full Visual Genome dataset, please refer to [VisualGenome](https://visualgenome.org/).
 ## Training networks
 
 ---
@@ -43,7 +43,7 @@ Once the datasets are set up, you can train the networks as follows:
  # train Box-FaceS with CelebA-HQ dataset, with a batch size of 16
 python train.py -c configs/celebahq.json --bz 16
  # train Box-FaceS with VGA dataset, with a batch size of 8 (paper setting on vga)
-python train.py -c configs/vg.json --bz 8
+python train.py -c configs/vga.json --bz 8
 ```
 
    The code will use all GPUS by default, please specify the devices you want to use by:
@@ -53,15 +53,15 @@ python train.py -c configs/vg.json --bz 8
 CUDA_VISIBLE_DEVICES=0,1 python train.py -c configs/celebahq.json --bz 8
 ```
 
-3. The checkpoints are written to a newly created directory `saved/models/`
+3. The checkpoints are written to a newly created directory `saved/models/<DATASET>`
 
 Pre-trained models can be found on Google Drive:
 
 | Path                                                         | Description                                              |
 | ------------------------------------------------------------ | -------------------------------------------------------- |
-| [pretrained](https://drive.google.com/drive/folders/1hXtzE2HhJ7ywOs826PCs_ebppw662T7L?usp=sharing) | Main folder.                                             |
-| ├  [celeba-hq-256](https://drive.google.com/file/d/1ggTJjGlI_7nKRH0c9Ur6lVMWlRY1z8pD/view?usp=sharing) | Box-FaceS trained with CelebA-HQ dataset at 256×256.     |
-| ├  [vga-256](https://drive.google.com/file/d/10QzJAWPaet9e_p-8B66vV500DRzmfaoz/view?usp=sharing) | Box-FaceS trained with Visual Genome Animals at 256×256. |
+| [checkpoint](https://drive.google.com/drive/folders/1gMhaWgNnE_0Ld-zOtVJ4kw4qxudW_Q0p?usp=sharing) | Main folder.                                             |
+| ├  [celeba_hq_256.pt](https://drive.google.com/file/d/1RXluIY-MvDdbqS2dPxllQpCoywXFHQZV/view?usp=sharing) | Box-FaceS trained with CelebA-HQ dataset at 256×256.     |
+| ├  [vga_256.pt](https://drive.google.com/file/d/19sO0xF4gr8cllW2uzOONgLvciB39Mx3H/view?usp=sharing) | Box-FaceS trained with Visual Genome Animals at 256×256. |
 
 ## Evaluation 
 
@@ -76,13 +76,13 @@ python move.py --cmd <INSTRUCTION> # editing results are saved to output/move/<I
 For **face component transfer**, run:
 
 ```bash
-python replace.py --index <COMPONENT_INDEX> # editing results are saved to output/replace
+python replace.py --index <COMPONENT_INDEX> # editing results are saved to output/replace/
 ```
 
 For **image reconstruction**, run:
 
 ```bash
-python reconstruction.py # editing results are saved to output/reconstruction
+python reconstruction.py # editing results are saved to output/recon
 ```
 
 To reproduce the quantitative results in the paper:
@@ -98,6 +98,16 @@ python reconstruction.py --data_path data/test.txt --img_dir data/CelebA-HQ-img
 
 
 The results are saved to `output/`.
+
+## Metrics 
+
+---
+
+- Reconstruction:  MSE, LPIPS, SSIM, FID
+- Component transfer: MSE$_{\text{irr}}$, IFG, FID
+- Component editing:  FID
+
+If you want to see details, please follow `metrics/README.md`.
 
 ## Citation
 

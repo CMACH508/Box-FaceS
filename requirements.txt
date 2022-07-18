@@ -1,0 +1,7 @@
+scikit-learn
+scikit-image
+ipython
+tqdm
+opencv-python
+albumentations
+pytorch_fid

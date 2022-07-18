@@ -13,13 +13,12 @@ GPU = 0
 torch.cuda.set_device(GPU)
 device = torch.device(GPU)
 args = argparse.ArgumentParser(description='PyTorch Template')
-args.add_argument('-c', '--config', default='configs/celebahq.json', type=str)
-args.add_argument('-r', '--resume', default='checkpoints/celebahq/checkpoint-latest.pth', type=str)
+args.add_argument('-r', '--resume', default='checkpoints/celeba_hq_256.pth', type=str)
 args.add_argument('--index', default=[2], type=str)
 args.add_argument('--bbox_path', default='data/bbox.pkl', type=str)
 args = args.parse_args()
 
-img_dir = '/home/huangwenjing/data/face_manipulation/CelebAMask-HQ/CelebA-HQ-img'
+img_dir = 'data/CelebA-HQ-img'
 sources = make_dataset_txt('data/test.txt')
 references = make_dataset_txt('data/shuffled_test.txt')
 

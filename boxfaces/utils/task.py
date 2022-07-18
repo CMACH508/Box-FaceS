@@ -1,5 +1,4 @@
 import torch
-import torch.nn.functional as F
 import torchvision.transforms as transforms
 from random import randint
 import numpy as np
@@ -98,30 +97,3 @@ def random_irregular_mask(img, width):
 
     return mask
 
-###################################################################
-# multi scale for image generation
-###################################################################
-
-
-def scale_img(img, size):
-    scaled_img = F.interpolate(img, size=size, mode='bilinear', align_corners=True)
-    return scaled_img
-
-
-def scale_pyramid(img, num_scales):
-    scaled_imgs = [img]
-
-    s = img.size()
-
-    h = s[2]
-    w = s[3]
-
-    for i in range(1, num_scales):
-        ratio = 2**i
-        nh = h // ratio
-        nw = w // ratio
-        scaled_img = scale_img(img, size=[nh, nw])
-        scaled_imgs.append(scaled_img)
-
-    scaled_imgs.reverse()
-    return scaled_imgs

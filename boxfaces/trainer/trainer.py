@@ -24,9 +24,8 @@ class Trainer(BaseTrainer):
     def _train_epoch(self, epoch):
         """
         Training logic for an epoch
-
         :param epoch: Integer, current training epoch.
-        :return: A log that contains average loss and metric in this epoch.
+        :return: .
         """
         self.netE.train()
         self.netG.train()
@@ -96,8 +95,12 @@ class Trainer(BaseTrainer):
             g_losses.total_loss.backward()
             self.optimizer_G.step()
 
-            accumulate(self.e_ema, self.netE, ACCUM)
-            accumulate(self.g_ema, self.netG, ACCUM)
+            if self.config['distributed']:
+                accumulate(self.e_ema, self.netE.module, ACCUM)
+                accumulate(self.g_ema, self.netG.module, ACCUM)
+            else:
+                accumulate(self.e_ema, self.netE, ACCUM)
+                accumulate(self.g_ema, self.netG, ACCUM)
 
             ###################################################
             # print and write losses, update checkpoint
@@ -140,7 +143,6 @@ class Trainer(BaseTrainer):
     def _valid_epoch(self, epoch):
         """
         Validate after training an epoch
-
         :param epoch: Integer, current training epoch.
         :return: A log that contains information about validation
         """

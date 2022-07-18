@@ -1,5 +1,4 @@
 import torch
-from numpy import inf
 from abc import abstractmethod
 from functools import partial
 from utils.util import set_seed
@@ -29,7 +28,7 @@ class BaseTrainer:
         if (not config['distributed']) or config['global_rank'] == 0:
             self.main_process = True
         # setup data_set instances
-        data_set = import_module('data_loader.'+config['dataset'])
+        data_set = import_module('data_loader.' + config['dataset'])
         self.train_dataset = config.init_obj('data_set', data_set, 'train')
         self.train_sampler = None
 
@@ -122,17 +121,6 @@ class BaseTrainer:
         self.update_ckpt = cfg_trainer['update_ckpt']
         self.checkpoint_dir = config.save_dir
         self.epochs = cfg_trainer['epochs']
-        self.monitor = cfg_trainer.get('monitor', 'off')
-
-        if self.monitor == 'off':
-            self.mnt_mode = 'off'
-            self.mnt_best = 0
-        else:
-            self.mnt_mode, self.mnt_metric = self.monitor.split()
-            assert self.mnt_mode in ['min', 'max']
-            self.mnt_best = inf if self.mnt_mode == 'min' else -inf
-
-        self.best_ins = -inf
 
     @abstractmethod
     def _train_epoch(self, epoch):
@@ -165,14 +153,14 @@ class BaseTrainer:
             if self.main_process:
                 if epoch % self.valid_period == 0:
                     val_metrics = self._valid_epoch(epoch)
-                    if epoch % self.save_period == 0:
-                        self._save_checkpoint(epoch, latest=False, val_metric=val_metrics[self.mnt_metric])
-                        with open(self.config['exp_id'] + '_log.txt', 'a') as f:
-                            f.write('*****************EPOCH ' + str(epoch) + '*****************')
+                    with open('log.txt', 'a') as f:
+                        f.write('*****************EPOCH ' + str(epoch) + '*****************')
+                        f.write('\n')
+                        for k in val_metrics.keys():
+                            f.write(str(k) + ': ' + str(val_metrics[k]))
                             f.write('\n')
-                            for k in val_metrics.keys():
-                                f.write(str(k) + ': ' + str(val_metrics[k]))
-                                f.write('\n')
+                if epoch % self.save_period == 0:
+                    self._save_checkpoint(epoch, latest=False)
 
     def _set_device(self, args):
         if torch.cuda.is_available():
@@ -189,13 +177,12 @@ class BaseTrainer:
         return DDP(arch, device_ids=[self.config['global_rank']], output_device=self.config['global_rank'],
                    broadcast_buffers=False, find_unused_parameters=True)
 
-    def _save_checkpoint(self, epoch, latest, val_metric=None):
+    def _save_checkpoint(self, epoch, latest):
         """
         Saving checkpoints
 
         :param epoch: current epoch number
-        :param log: logging information of the epoch
-        :param save_best: if True, rename the saved checkpoint to 'model_best.pth'
+        :param latest: if True, rename the saved checkpoint to 'checkpoint_latest.pth'
         """
 
         state = {
@@ -208,8 +195,7 @@ class BaseTrainer:
             "g_ema": self.g_ema.state_dict(),
             'optimizer_G': self.optimizer_G.state_dict(),
             'optimizer_D': self.optimizer_D.state_dict(),
-            'config': self.config,
-            self.mnt_metric: val_metric
+            'config': self.config
         }
 
         if isinstance(self.netG, torch.nn.DataParallel) or isinstance(self.netG, DDP):

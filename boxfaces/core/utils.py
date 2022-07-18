@@ -1,22 +1,12 @@
-import os
-import cv2
 import io
-import sys
-import glob
 import time
 import zipfile
-import subprocess
-import logging
 import random
-import numpy as np
-import matplotlib.pyplot as plt
 from PIL import Image
-from contextlib import contextmanager
 import torch
-import torch.distributed as dist
 
 
-# set random seed 
+# set random seed
 def set_seed(seed):
     assert seed >= 0, '{} >= {}'.format(seed, 0)
     torch.manual_seed(seed)

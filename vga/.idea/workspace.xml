@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f970cb24-9828-4e9b-8ccc-095fe7d6d1df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/bbox.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/vga_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/batchnorm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/batchnorm_reimpl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/comm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/replicate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/sync_batchnorm/unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/tests/test_numeric_batchnorm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/tests/test_numeric_batchnorm_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Synchronized-BatchNorm-PyTorch/tests/test_sync_batchnorm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/layer_builders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/nets_builders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/fused_act.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/fused_bias_act.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/fused_bias_act_kernel.cu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/upfirdn2d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/upfirdn2d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/op/upfirdn2d_kernel.cu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/batchnorm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/batchnorm_reimpl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/comm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/replicate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/sync_batchnorm/unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vga/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vga/layer_builders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vga/nets_builders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/move.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prepare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reconstruction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/eval_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/base/base_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/base/base_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/checkpoints/celebahq/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/comtrsf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/comtrsf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/configs/celebahq.json" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/configs/celebahq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/core/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/core/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/data_loader/celebahq.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/data_loader/celebahq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/model/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/model/networks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/move.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/move.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/14124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/2569.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/4027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/5256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/5914.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/6786.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/6898.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/move/eyes_up/9057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/14124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/2569.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/4027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/5256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/5914.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/6786.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/6898.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/output/recon/9057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/parse_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/parse_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/prepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/prepare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/reconstruction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/replace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/trainer/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/trainer/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/utils/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/utils/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/utils/eval_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/utils/eval_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/utils/evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/utils/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/utils/model_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../boxfaces/utils/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boxfaces/utils/task.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/vga$gene_list.coverage" NAME="gene_list Coverage Results" MODIFIED="1658120014637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vga$move.coverage" NAME="move Coverage Results" MODIFIED="1658155557282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vga$train.coverage" NAME="train Coverage Results" MODIFIED="1658155590020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vga$reconstruction.coverage" NAME="reconstruction Coverage Results" MODIFIED="1658155070172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1620">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/trainer_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-989">
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/move.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2717">
+              <caret line="31" column="57" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parse_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prepare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4932">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reconstruction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="197">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configs/vga.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>huangwenjing</find>
+      <find>bilinear</find>
+      <find>imagenet_deprocess_batch</find>
+      <find>mask_image_in_bbox</find>
+      <find>put_gray_mask</find>
+      <find>INV_IMAGENET_MEAN</find>
+      <find>is_image_file</find>
+      <find>unpack_var</find>
+      <find>get_name</find>
+      <find>make_data</find>
+      <find>save_img</find>
+      <find>get_mask</find>
+      <find>rescale</find>
+      <find>get_img_mask</find>
+      <find>get_mask_from_node</find>
+      <find>crop_bbox_batch_cudnn</find>
+      <find>crop_bbox_batch</find>
+      <find>utils.bilinear</find>
+      <find>reduce_dim</find>
+      <find>vga-img</find>
+      <find>VGA-img</find>
+      <find>home</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>VGA-img</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/base/base_trainer2.py" />
+        <option value="$PROJECT_DIR$/model/model1.py" />
+        <option value="$PROJECT_DIR$/modules/nets_builders.py" />
+        <option value="$PROJECT_DIR$/modules/vga/nets_builders.py" />
+        <option value="$PROJECT_DIR$/modules/vga/layer_builders.py" />
+        <option value="$PROJECT_DIR$/move-metrics.py" />
+        <option value="$PROJECT_DIR$/modules/layer_builder22s.py" />
+        <option value="$PROJECT_DIR$/gene_list.py" />
+        <option value="$PROJECT_DIR$/data/sample.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/trainer/trainer.py" />
+        <option value="$PROJECT_DIR$/parse_config.py" />
+        <option value="$PROJECT_DIR$/utils/data_utils.py" />
+        <option value="$PROJECT_DIR$/utils/model_utils.py" />
+        <option value="$PROJECT_DIR$/utils/task.py" />
+        <option value="$PROJECT_DIR$/utils/eval_utils.py" />
+        <option value="$PROJECT_DIR$/prepare.py" />
+        <option value="$PROJECT_DIR$/configs/exp1.json" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/reconstruction.py" />
+        <option value="$PROJECT_DIR$/base/base_trainer.py" />
+        <option value="$PROJECT_DIR$/data_loader/vga.py" />
+        <option value="$PROJECT_DIR$/model/networks.py" />
+        <option value="$PROJECT_DIR$/utils/bilinear.py" />
+        <option value="$PROJECT_DIR$/move.py" />
+        <option value="$PROJECT_DIR$/configs/vga.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1987" />
+    <option name="y" value="32" />
+    <option name="width" value="2493" />
+    <option name="height" value="1408" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vga" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../boxfaces" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/modules" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/base" />
+      <recent name="$PROJECT_DIR$/trainer" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/modules" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="gene_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vga" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gene_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="move" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vga" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/move.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reconstruction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vga" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reconstruction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vga" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.move" />
+        <item itemvalue="Python.reconstruction" />
+        <item itemvalue="Python.gene_list" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f970cb24-9828-4e9b-8ccc-095fe7d6d1df" name="Default Changelist" comment="" />
+      <created>1658063625359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658063625359</updated>
+      <workItem from="1658063626501" duration="17934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17934000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1987" y="32" width="2493" height="1408" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1539742" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299578" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04472574" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/output/left/move/2324200.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2339680.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2345258.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2345288.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/285939.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2319233.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2321171.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2334852.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2410525.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2398248.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2341290.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2345281.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2338500.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2321760.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2375009.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2395947.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2408116.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2414097.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vga_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../boxfaces/base/base_trainer2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/base_trainer2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2375623.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2395734.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/reals/2316365.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/reals/2375009.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2316365.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/left/move/2372864.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/base_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-618">
+          <caret line="219" column="37" selection-start-line="219" selection-start-column="37" selection-end-line="219" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_loader/vga.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1061" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6245">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/layer_builders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2916">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/vga/layer_builders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11537">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4392">
+          <caret line="125" column="36" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/bilinear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/eval_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2969">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/trainer_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-989">
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2717">
+          <caret line="31" column="57" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4932">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reconstruction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/vga.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="197">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

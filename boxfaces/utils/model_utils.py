@@ -2,32 +2,11 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 
-# MAX_BOX = [[9, 9], [13, 11], [11, 6], [11, 8], [7, 4], [7, 5]] # >100%, 32px, fan
-
-# MAX_BOX = [[6, 6], [4, 9], [3, 7], [3, 7], [3, 6], [3, 6]]  # >80%, 32px
-
 HIST_BOX = [[7, 7], [6, 9], [4, 8], [4, 8], [4, 6], [4, 6]]  # from hist, 32px
 
 
-# AVG_BOX = [[6, 6], [8, 4], [7, 3], [7, 3], [5, 3], [5, 3]]  # avg, 32px, fan
-
-
-# MAX_BOX = [[4, 5], [6, 5], [6, 3], [6, 3], [4, 3], [4, 2]] # >100%, 16px, fan
-
-
-# MAX_BOX = [[5, 4], [5, 6], [3, 6], [3, 6], [3, 4], [2, 4]]  # >100%, 16px
-
-
 def feature_align(raw_feature, masks, counts):
-    """
-    Perform feature align from the raw feature map.
-    :param raw_feature: raw feature map
-    :param P: point set containing point coordinates
-    :param ori_size: size of the original image
-    :return: out
-    """
     all_nodes = []
-
     for idx, (count, mask) in enumerate(zip(counts, masks)):
         node_feature = (raw_feature * mask.to(raw_feature)).sum(dim=2).sum(dim=2, keepdim=True) / count
 
@@ -90,8 +69,6 @@ def get_node_feats(raw_feature, bbox, layers):
             node_feature = raw_feature[batch_idx:batch_idx + 1, :, box[0]:box[2], box[1]:box[3]]
             maxh, maxw = HIST_BOX[idx]
             fh, fw = node_feature.size(2), node_feature.size(3)
-
-            # print(idx, fh, fw)
 
             if fh <= maxh and fw <= maxw:
                 node_feature = size_padding(node_feature, HIST_BOX[idx])
