@@ -17,7 +17,7 @@ python -m pytorch_fid output/reals output/recon # returns FID
 
 **Component transfer**
 
-First, download the pre-trained StyleGAN2 discriminator from [stylegan2.pt]() and put it to `checkpoint/`
+First, download the pre-trained StyleGAN2 discriminator from [stylegan2.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put it to `checkpoint/`
 
 ```bash
 # First, reconstruct images following Box-FaceS/boxfaces/reconstruction.py
