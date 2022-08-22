@@ -121,5 +121,5 @@ xxx
 ## Acknowledgement
 
 ---
-This repository used some codes in [pytorch-template](https://github.com/victoresque/pytorch-template) and [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch)
+This repository used some codes in [pytorch-template](https://github.com/victoresque/pytorch-template) and [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch).
 
