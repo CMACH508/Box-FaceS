@@ -117,3 +117,9 @@ If you find this work useful for your research, please cite our paper:
 ```
 xxx
 ```
+
+## Acknowledgement
+
+---
+This repository used some codes in [pytorch-template](https://github.com/victoresque/pytorch-template) and [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch)
+
