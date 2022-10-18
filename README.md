@@ -115,7 +115,13 @@ If you want to see details, please follow `metrics/README.md`.
 
 If you find this work useful for your research, please cite our paper:
 ```
-xxx
+@inproceedings{huang2022box,
+  title={Box-FaceS: A Bidirectional Method for Box-Guided Face Component Editing},
+  author={Huang, Wenjing and Tu, Shikui and Xu, Lei},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={6061--6071},
+  year={2022}
+}
 ```
 
 ## Acknowledgement
